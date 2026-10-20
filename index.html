@@ -1,2 +1,65 @@
-<h1> Hello World</h1>
-<p> I think the commit will work?</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <button data-modal-target="#modal">Open Modal</button>
+    <nav>
+      <ul>
+        <li><a href=brands>brands</a></li>
+        <li><a href=store>store</a></li>
+        <li><a href=connect>connect</a></li>
+        <li><a href=shop>shop</a></li>
+      </ul>
+    </nav>
+    <h1>Explore the Kellogs Universe</h1>
+    <button>start shopping</button>
+    <ul>
+        <li> 
+            <h2>frosted mini wheats</h2>
+        </li>
+        <li>
+            <h2>frosted flakes</h2>
+        </li>
+        <li>
+            <h2>apple jacks</h2>
+        </li>
+        <li>
+            <h2>special k</h2>
+        </li>
+        <li>
+            <h2>cocoa krispies</h2>
+        </li>
+        <li>
+            <h2>corn pops</h2>
+        </li>
+        <li>
+            <h2>honey smacks</h2>
+        </li>
+    </ul>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example Text</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+        error sit voluptatem accusantium.
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>
