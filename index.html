@@ -12,52 +12,54 @@
   <body>
     <button data-modal-target="#modal">Open Modal</button>
     <nav>
-      <ul>
+      <ul class="nav-list">
         <li><a href=brands>brands</a></li>
         <li><a href=store>store</a></li>
+        <li><a class="top-left" href="../index.html"
+      ><img src="/images/kellogs-logo.png" alt="Logo"
+    /></a></li>
         <li><a href=connect>connect</a></li>
         <li><a href=shop>shop</a></li>
       </ul>
+      <hr class="line">
     </nav>
     <h1>Explore the Kellogs Universe</h1>
     <button>start shopping</button>
-    <ul>
+    <ul class="cereal-list">
         <li> 
+            <img src="/images/miniwheats.png"alt="frosted mini wheats" />
             <h2>frosted mini wheats</h2>
         </li>
         <li>
+            <img src="/images/frostedflakes.png" alt="frosted flakes" />
             <h2>frosted flakes</h2>
         </li>
         <li>
+            <img src="/images/applejacks.png" alt="apple jacks" />
             <h2>apple jacks</h2>
         </li>
         <li>
+            <img src="/images/specialk.png" alt="special k" />
             <h2>special k</h2>
         </li>
         <li>
-            <h2>cocoa krispies</h2>
-        </li>
-        <li>
+            <img src="/images/cornpops.png" alt="corn pops" />
             <h2>corn pops</h2>
         </li>
         <li>
+            <img src="/images/honeysmacks.png" alt="honey smacks" />
             <h2>honey smacks</h2>
         </li>
     </ul>
+</body>
     <div class="modal" id="modal">
       <div class="modal-header">
-        <div class="title">Example Text</div>
+        <div class="title">SIGN UP FOR A CHANCE TO WIN A FREE BOX OF FROOT LOOPS</div>
         <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium.
+            <input type="email" id="user-email" name="user-email" placeholder="email" >
+        <button>Sign Up</button>
       </div>
     </div>
     <div id="overlay"></div>
