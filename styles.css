@@ -53,6 +53,11 @@ h2 {
   margin-right: auto;
 }
 
+.scale-all:hover {
+  transform: scale(1.5);
+  transition: transform 500ms ease-in-out;
+}
+
 .nav-list {
   display: flex;
   justify-content: space-evenly;
