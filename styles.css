@@ -90,7 +90,7 @@ button {
   background-color:  #FBECEC;
 }
 
-button.hover {
+button:hover {
   background-color: #CC0046;
   color:  #FBECEC;
 }
@@ -170,6 +170,32 @@ button.hover {
   font-size: 1.2rem;
 }
 
+.products {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+
+.products img {
+  margin-top: 1rem;
+}
+
+.words {
+margin-top: 6rem;
+}
+
+.open-button::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 8px;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.open-button:hover::after,
+.open-button:focus-visible::after {
+  opacity: 1;
+  transform: translateX(0);}
 /*
 .modal-header {
   padding: 10px 15px;
