@@ -79,7 +79,10 @@ nav ul li a {
 button {
   display: block;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 1.2rem;
   font-family: 'liter', sans-serif;
   color: #CC0046;
@@ -155,8 +158,10 @@ button:hover {
   padding: 10px 20px;
   align-items: center;
   width: 30%;
-  margin-left: auto;
+  margin-left: 360px;
   margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #user-email::placeholder {
@@ -186,16 +191,30 @@ margin-top: 6rem;
 .open-button::after {
   content: "→";
   display: inline-block;
-  margin-left: 8px;
+  margin-left: 15px;
   opacity: 0;
   transform: translateX(-5px);
-  transition: opacity 200ms ease, transform 200ms ease;
+  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
 .open-button:hover::after,
 .open-button:focus-visible::after {
   opacity: 1;
-  transform: translateX(0);}
+  transform: translateX(0);
+}
+
+
+.modal-header{
+  display: flex;
+  justify-content: center;
+  padding-left: 400px;
+}
+
+.close-button {
+  padding-top: -20px;
+  padding-bottom: -20px;
+  cursor: pointer;
+}
 /*
 .modal-header {
   padding: 10px 15px;
