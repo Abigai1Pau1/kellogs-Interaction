@@ -45,12 +45,18 @@ h2 {
 .cereal-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 0;
   margin: 0;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.cereal-list li {
+  width: 250px;
 }
 
 .scale-all:hover {
@@ -60,6 +66,7 @@ h2 {
 
 .nav-list {
   display: flex;
+  flex: flex-wrap;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem;
@@ -74,12 +81,14 @@ nav ul li a {
   color: #CC0046;
   font-family: 'liter', sans-serif;
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 
 button {
   display: block;
   margin: 0 auto;
-  padding-left: 50px;
+  padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -91,6 +100,10 @@ button {
   cursor: pointer;
   border-radius: 34px;
   background-color:  #FBECEC;
+}
+
+.open-button{
+  padding-left: 50px;
 }
 
 button:hover {
@@ -157,11 +170,13 @@ button:hover {
   border-radius: 34px;
   padding: 10px 20px;
   align-items: center;
-  width: 30%;
-  margin-left: 360px;
+  justify-content: center;
+  width: 35%;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  margin-left: 32%;
 }
 
 #user-email::placeholder {
@@ -173,6 +188,7 @@ button:hover {
   margin: 0 auto;
   padding: 10px 20px;
   font-size: 1.2rem;
+  
 }
 
 .products {
@@ -191,10 +207,10 @@ margin-top: 6rem;
 .open-button::after {
   content: "→";
   display: inline-block;
-  margin-left: 15px;
   opacity: 0;
   transform: translateX(-5px);
   transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  padding-left: 10px;
 }
 
 .open-button:hover::after,
@@ -206,15 +222,27 @@ margin-top: 6rem;
 
 .modal-header{
   display: flex;
-  justify-content: center;
-  padding-left: 400px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+  margin-left: 38%;
+  padding-right: 10%;
+  
 }
 
 .close-button {
-  padding-top: -20px;
-  padding-bottom: -20px;
   cursor: pointer;
 }
+
+.loop {
+  position: absolute;
+  left: 130%;
+  bottom: 30%;
+  transform: translateX(-30px);
+  transition: transform 300ms ease-in-out;
+}
+
+
 /*
 .modal-header {
   padding: 10px 15px;
