@@ -16,6 +16,7 @@ nav {
   max-width: 90%;
    margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
 
 }
 
@@ -133,6 +134,7 @@ button:hover {
   background-position: center;
   width: 60%;
   height: 60%;
+  z-index: 3;
 }
 
 
@@ -150,6 +152,7 @@ button:hover {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  z-index: 2;
 }
 
 #overlay.active {
@@ -227,7 +230,6 @@ margin-top: 6rem;
   width: 60%;
   margin-left: 38%;
   padding-right: 10%;
-  
 }
 
 .close-button {
@@ -235,12 +237,38 @@ margin-top: 6rem;
 }
 
 .loop {
-  position: absolute;
   left: 130%;
   bottom: 30%;
-  transform: translateX(-30px);
-  transition: transform 300ms ease-in-out;
+  position: fixed;
+  z-index: 1;
 }
+
+ .modal.active .loop {
+  animation: roll 3s linear forwards;
+  z-index: 1;
+} 
+
+@keyframes roll {
+  from {
+    transform: translateX(0) rotate(0deg);
+  }
+  to {
+    transform: translateX(-700px) rotate(-1800deg);
+  }
+}
+  
+ /*.loop:hover {
+  transform: rotate(360deg);
+  transition: 2s ease-in-out ;
+  animation: spin 400ms linear infinite;
+  transform: translateX(-600px);
+
+}
+
+.loop:hover {
+transform: translateX(-600px);
+}
+
 
 
 /*

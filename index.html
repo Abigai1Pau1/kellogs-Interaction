@@ -8,9 +8,7 @@
     <link href="styles.css" rel="stylesheet" />
     <script defer src="script.js"></script>
   </head>
-
   <body>
-    <button data-modal-target="#modal">Open Modal</button>
     <nav>
       <ul class="nav-list">
         <li><a href=brands>brands</a></li>
@@ -25,7 +23,7 @@
     </nav>
     <section class="words">
     <h1>Explore the Kellogs Universe</h1>
-    <button class="open-button">start shopping</button>
+    <button data-modal-target="#modal" class="open-button">start shopping</button>
     </section>
     <section class="products">
     <ul class="cereal-list">
@@ -65,7 +63,7 @@
       <div class="modal-body">
             <input type="email" id="user-email" name="user-email" placeholder="email" >
         <button class="open-button">Sign Up</button>
-        <img class="loop" src="/images/froot-loop.png" alt="froot loop" />
+        <img class="loop" id="loop" src="/images/froot-loop.png" alt="froot loop" />
       </div>
     </section>
     <div id="overlay"></div>
