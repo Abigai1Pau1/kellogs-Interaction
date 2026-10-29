@@ -239,13 +239,11 @@ margin-top: 6rem;
 .loop {
   left: 130%;
   bottom: -10%;
-  position: fixed;
-  z-index: 1;
+  position: absolute;
 }
 
- .modal.active .loop {
+.modal.active .loop {
   animation: roll 4s linear forwards;
-  z-index: 1;
 } 
 
 @keyframes roll {
