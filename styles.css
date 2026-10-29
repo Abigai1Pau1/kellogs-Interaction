@@ -238,13 +238,13 @@ margin-top: 6rem;
 
 .loop {
   left: 130%;
-  bottom: 30%;
+  bottom: -10%;
   position: fixed;
   z-index: 1;
 }
 
  .modal.active .loop {
-  animation: roll 3s linear forwards;
+  animation: roll 4s linear forwards;
   z-index: 1;
 } 
 
@@ -253,7 +253,7 @@ margin-top: 6rem;
     transform: translateX(0) rotate(0deg);
   }
   to {
-    transform: translateX(-700px) rotate(-1800deg);
+    transform: translateX(-2000px) rotate(-1800deg);
   }
 }
   
